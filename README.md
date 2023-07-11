@@ -1,6 +1,13 @@
 # readme-generator 
   by Jake Lipscomb
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+
+
+## Click the button to watch my walkthrough video on YouTube!
+[![Watch the video](https://cdn-icons-png.flaticon.com/256/1384/1384060.png)](https://www.youtube.com/watch?v=bveFOJrZfVo)
+
+
   ## Table of Contents
   * [Description](#description)
   * [Requirements](#requirements)
