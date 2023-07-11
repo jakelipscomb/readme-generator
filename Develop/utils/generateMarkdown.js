@@ -43,15 +43,15 @@ ${data.require}
 ## Usage
 ${data.languages}
 ## Contact-Info
-* Username ${data.username}(https://github.com/${data.username}/)
-* Email ${data.email}
+* Username: ${data.username} (https://github.com/${data.username}/)
+* Email: ${data.email}
 ## Contributors
 ${data.contributors}
 ## Testing
 \n
 ${data.testing}
 \n
-${renderLicenseSection(data.license)}
+${renderLicenseSection(data.licenses)}
 `;
 }
 
