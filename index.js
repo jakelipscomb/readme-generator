@@ -8,6 +8,11 @@ const generateMarkdown = require("./Develop/utils/generateMarkdown")
 const questions = [
     {
         type: 'input',
+        name: 'name',
+        message: 'What is your name?'
+    },
+    {
+        type: 'input',
         name: 'username',
         message: 'What is your Git username?'
     },
@@ -38,10 +43,9 @@ const questions = [
         message: 'List any project dependencies that are being used.'
     },
     {
-        type: 'checkbox',
+        type: 'input',
         name: 'languages',
-        message: 'What langauges are utilized in this project?',
-        choices: ['html', 'CSS', 'JavaScript', 'MySQL']
+        message: 'What langauges and/or technologies are you using in this project?',
     },
     {
         type: 'input',
@@ -65,7 +69,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((res) => {
-        console.log("Creating README.md file...");
+        console.log("Creating README.md file in docs folder...");
         writeToFile("./Develop/docs/README.md", generateMarkdown(res))
     })
     .catch((err) => {

@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
 // Function that returns the license link
 function renderLicenseLink(license) {
   if (license !== "No License") {
-    return `\n [License](#license) \n`;
+    return `* [License](#license)\n`;
   }
   return "";
 }
@@ -26,7 +26,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} by ${data.username}
+  return `# ${data.title} 
+  by ${data.name}
   ${renderLicenseBadge(data.licenses)}
   ## Table of Contents
   * [Description](#description)
